@@ -31,8 +31,26 @@
         let input_criancas = document.getElementById('criancas');
         let input_duracao = document.getElementById('duracao');
         let resultado = document.getElementById('resultado');
+        
+
+        
+        function carnePP(duracao){
+            let carne = 400;
+            if(duracao >= 6){
+                carne = 650;
+
+
+            }else{
+                return 400;
+            }
+        }
         function calcular(){ 
-            alert('calculando');
+            let adultos = input_adultos.value;
+            let criancas = input_criancas.nodeValue;
+            let duracao = input_duracao.value;
+
+            let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) /2 * criancas);
+            alert(qdtTotalCarne);
         }
 
 
