@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Churrascometro</title>
+</head>
+<body>
+    <!-- sempre saiba a regra de negocio do programa -->
+    <!-- proposta desse programa é calcular quanto de carne irá precisar, levando em consideração numero de horas da festa e quantidade de pessoas que terá na festa -->
+    <div>
+        <section class="container_principal">
+            <h1>Calculadora cientifica
+            </h1>
+            <input type="text" placeholder="adultos" id="adultos">
+            <input type="text" placeholder = "crianças" id="criancas">
+            <input type="text" placeholder = "horas de duração" id="duracao">
+            <button onclick="calcular()">Enviar</button>
+        </section>
+        <section class="container_principal" id="resultado">
+            <h1>redulstados
+            </h1>
+            
+        </section>
+
+    </div>
+    <script>
+        let input_adultos = document.getElementById('adultos');
+        let input_criancas = document.getElementById('criancas');
+        let input_duracao = document.getElementById('duracao');
+        let resultado = document.getElementById('resultado');
+        function calcular(){ 
+            alert('calculando');
+        }
+
+
+    </script>
+</body>
+</html>
